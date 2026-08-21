@@ -1,0 +1,18 @@
+- class_name: 我的装备
+  description: 生产力与日常使用设备
+  tip: 后续可以替换成你自己的设备清单
+  top_background: /img/zhuyz-cover-project.svg
+  good_things:
+    - title: 工作设备
+      description: 日常写作、开发和整理博客使用的工具。
+      equipment_list:
+        - name: 主要电脑
+          specification: 待补充
+          description: 主要开发与写作设备。
+          image: /img/zhuyz-cover-tech.svg
+          link: /about/
+        - name: 移动设备
+          specification: 待补充
+          description: 移动端预览与日常记录。
+          image: /img/zhuyz-cover-notes.svg
+          link: /about/

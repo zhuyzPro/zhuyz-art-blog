@@ -1,0 +1,517 @@
+# AnZhiYu demo-style overrides
+
+menu:
+  文章:
+    分类: /categories/ || anzhiyu-icon-shapes
+    标签: /tags/ || anzhiyu-icon-tags
+    归档: /archives/ || anzhiyu-icon-box-archive
+  我的:
+    技术笔记: /categories/技术笔记/ || anzhiyu-icon-code
+    项目记录: /categories/项目记录/ || anzhiyu-icon-diagram-project
+    相册集: /album/ || anzhiyu-icon-images
+  关于:
+    关于本站: /about/ || anzhiyu-icon-paper-plane
+    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
+nav:
+  enable: false
+  travelling: false
+  clock: false
+  menu:
+    - title: 网页
+      item:
+        - name: 博客首页
+          link: https://zhuyz.art/
+          icon: /img/zhuyz-hero.svg
+        - name: 博客
+          link: https://zhuyz.art/
+          icon: /img/zhuyz-hero.svg
+    - title: 项目
+      item:
+        - name: 个人仓库
+          link: https://github.com/zhuyzPro
+          icon: /img/skill-code.svg
+        - name: 茶叶站
+          link: https://zhuyz.cloud/
+          icon: /img/skill-note.svg
+
+favicon: /img/preloader-avatar.jpg
+
+avatar:
+  img: /img/zhuyz-hero.svg
+  effect: false
+
+author_status:
+  enable: false
+  statusImg: https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png
+
+social:
+  Github: https://github.com/zhuyzPro || anzhiyu-icon-github
+
+disable_top_img: false
+index_img: false
+default_top_img: false
+article_double_row: true
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  position: left
+  default_cover:
+    - /img/zhuyz-cover-tech.svg
+    - /img/zhuyz-cover-project.svg
+    - /img/zhuyz-cover-notes.svg
+
+error_img:
+  flink: /img/zhuyz-cover-notes.svg
+  post_page: /img/zhuyz-cover-project.svg
+
+home_top:
+  enable: true
+  timemode: date
+  title: Zhuyz Pro
+  subTitle: 项目分享与生活记录
+  siteText: ZHUYZ.ART
+  category:
+    - name: 技术
+      description: 实践与踩坑
+      path: /categories/技术笔记/
+      shadow: var(--anzhiyu-shadow-blue)
+      class: blue
+      icon: anzhiyu-icon-code
+    - name: 项目
+      description: 开发与复盘
+      path: /categories/项目记录/
+      shadow: var(--anzhiyu-shadow-red)
+      class: red
+      icon: anzhiyu-icon-diagram-project
+    - name: 随笔
+      description: 日常记录
+      path: /categories/生活随笔/
+      shadow: var(--anzhiyu-shadow-green)
+      class: green
+      icon: anzhiyu-icon-book
+  default_descr: 这里会持续沉淀技术实践、项目复盘与生活记录。
+  swiper:
+    enable: false
+    swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css
+    swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js
+  banner:
+    tips: 站点初始化
+    title: Zhuyz Pro Blog
+    image: /img/zhuyz-hero.svg
+    link: /about/
+
+post_meta:
+  page:
+    date_type: created
+    date_format: simple
+    categories: true
+    tags: true
+    label: false
+  post:
+    date_type: both
+    date_format: date
+    categories: false
+    tags: true
+    label: true
+    unread: false
+
+wordcount:
+  enable: false
+  post_wordcount: false
+  min2read: false
+  total_wordcount: false
+
+index_post_content:
+  method: 3
+  length: 260
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: https://zhuyz.art
+  location: 长沙
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  avatarSinks: false
+  copyright_author_img_back:
+  copyright_author_img_front:
+  copyright_author_link: /
+
+reward:
+  enable: false
+  QR_code:
+    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+      link: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+      text: 微信
+    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+      link: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+      text: 支付宝
+
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq
+
+comments:
+  use:
+  text: false
+  lazyload: false
+  count: false
+  card_post_count: false
+
+twikoo:
+  envId:
+  region:
+  visitor: false
+  option:
+
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text:
+  runtime:
+    enable: false
+  bdageitem:
+    enable: false
+  socialBar:
+    enable: false
+  list:
+    enable: false
+  footerBar:
+    enable: true
+    authorLink: /about
+    cc:
+      enable: false
+      link: /copyright
+    linkList:
+      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+        text: 主题
+      - link: https://github.com/zhuyzPro
+        text: GitHub
+    subTitle:
+      enable: false
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这里记录<b style="color:#fff">技术实践</b>、<b style="color:#fff">项目复盘</b>和<b style="color:#fff">生活随笔</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">内容会逐步替换为 Zhuyz Pro 自己的长期沉淀。</div>
+    name_link: /about
+  card_announcement:
+    enable: false
+    content: 欢迎来看我的博客鸭~
+  card_weixin:
+    enable: false
+    face:
+    backFace:
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: false
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+    highlightTags:
+      - Hexo
+      - 前端
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: false
+
+sidebar:
+  site_data:
+    archive: true
+    tag: true
+    category: true
+  menus_items: true
+  tags_cloud: true
+  display_mode: true
+  nav_menu_project: false
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+runtimeshow:
+  enable: true
+  publish_date: 4/1/2021 00:00:00
+
+newest_comments:
+  enable: false
+  limit: 6
+  storage: 10
+  avatar: true
+
+translate:
+  enable: true
+  default: 繁
+  rightMenuMsgDefault: 轉為繁體
+  defaultEncoding: 2
+  translateDelay: 0
+  msgToTraditionalChinese: 繁
+  msgToSimplifiedChinese: 简
+  rightMenuMsgToTraditionalChinese: 轉為繁體
+  rightMenuMsgToSimplifiedChinese: 转为简体
+
+centerConsole:
+  enable: true
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+    highlightTags:
+      - Hexo
+      - 前端
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+
+theme_color:
+  enable: true
+  main: "#425AEF"
+  dark_main: "#f2b94b"
+  paginator: "#425AEF"
+  text_selection: "#2128bd"
+  link_color: "var(--anzhiyu-fontcolor)"
+  meta_color: "var(--anzhiyu-fontcolor)"
+  hr_color: "#4259ef23"
+  code_foreground: "#fff"
+  code_background: "var(--anzhiyu-code-stress)"
+  toc_color: "#425AEF"
+  blockquote_padding_color: "#425AEF"
+  blockquote_background_color: "#425AEF"
+  scrollbar_color: "#425AEF"
+  meta_theme_color_light: "#f7f9fe"
+  meta_theme_color_dark: "#18171d"
+
+display_mode: light
+
+subtitle:
+  enable: false
+
+preloader:
+  enable: true
+  source: 1
+  avatar: /img/preloader-avatar.jpg
+
+pjax:
+  enable: true
+  exclude:
+
+local_search:
+  enable: false
+  preload: true
+  CDN:
+
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+  tags:
+    - 前端
+    - Hexo
+
+docsearch:
+  enable: false
+
+nav_music:
+  enable: false
+  console_widescreen_music: false
+  id: 8152976493
+  server: netease
+  volume: 0.7
+  all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
+
+music_page_default: nav_music
+
+post_head_ai_description:
+  enable: false
+  gptName: Zhuyz Pro
+  mode: local
+  switchBtn: true
+  btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
+  randomNum: 3
+  basicWordCount: 1500
+  key:
+  Referer:
+
+peoplecanvas:
+  enable: false
+  img:
+
+rightClickMenu:
+  enable: true
+
+agreementPopup:
+  enable: false
+
+diytitle:
+  enable: true
+  leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
+  backTitle: ♪(^∇^*)欢迎肥来！
+
+accesskey:
+  enable: true
+
+shortcutKey:
+  enable: true
+  delay: 100
+  shiftDelay: 200
+
+console:
+  enable: false
+
+aplayerInject:
+  enable: false
+  per_page: true
+
+site_verification:
+
+mainTone:
+  enable: true
+  mode: both
+  api:
+  cover_change: true
+
+noticeOutdate:
+  enable: true
+  style: flat
+  limit_day: 365
+  position: top
+  message_prev: 距离上次更新已经过去了
+  message_next: 天，文章的内容可能已经过时。
+
+photofigcaption: true
+
+LA:
+  enable: false
+  ck:
+  LingQueMonitorID:
+
+comment_barrage_config:
+  enable: false
+  maxBarrage: 1
+  barrageTime: 8000
+  accessToken: 2d3491da257a46b78951ffcdbde89f2e
+  mailMd5: d338f432ad0bf2f61e5fe4ad1642725d
+
+visitorMail:
+  enable: false
+  mail:
+
+greetingBox:
+  enable: true
+  default: 晚上好👋
+  list:
+    - greeting: 晚安😴
+      startTime: 0
+      endTime: 5
+    - greeting: 早上好鸭👋, 祝你一天好心情！
+      startTime: 6
+      endTime: 9
+    - greeting: 上午好👋, 状态很好，鼓励一下～
+      startTime: 10
+      endTime: 10
+    - greeting: 11点多啦, 在坚持一下就吃饭啦～
+      startTime: 11
+      endTime: 11
+    - greeting: 午安👋
+      startTime: 12
+      endTime: 14
+    - greeting: 🌈充实的一天辛苦啦！
+      startTime: 14
+      endTime: 18
+    - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
+      startTime: 19
+      endTime: 19
+    - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
+      startTime: 20
+      endTime: 24
+
+linkPageTop:
+  enable: true
+  title: 友链与伙伴
+  addFriendPlaceholder: "昵称：\n网站地址：\n头像图片 URL：\n描述：\n站点截图（可选）：\n"
+
+friends_vue:
+  enable: false
+  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
+  apiurl:
+  top_tips: 友链朋友圈暂未启用
+  top_background: /img/zhuyz-cover-project.svg
+
+pwa:
+  enable: true
+  startup_image_enable: false
+  manifest: /manifest.json
+  theme_color: var(--anzhiyu-main)
+  mask_icon:
+  apple_touch_icon: /img/preloader-avatar.jpg
+  bookmark_icon: /img/preloader-avatar.jpg
+  favicon_32_32:
+  favicon_16_16:
+
+lazyload:
+  enable: true
+  field: site
+  placeholder:
+  blur: true
+  progressive: true
+
+CDN:
+  internal_provider: local
+  third_party_provider: cbd
+  version: true
+  custom_format:
+  option:
+    translate: https://cdn.staticfile.org/hexo-theme-anzhiyu/1.6.8/js/tw_cn.js
+    algolia_js: https://cdn.staticfile.org/hexo-theme-anzhiyu/1.6.8/js/search/algolia.js
+    instantsearch: https://cdn.cbd.int/instantsearch.js@4.60.0/dist/instantsearch.production.min.js
+    lazyload: https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js
+    fancybox_css: https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css
+    fancybox: https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js
+    flickr_justified_gallery_js: https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js
+    flickr_justified_gallery_css: https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css
+    meting_api: https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r
+
+inject:
+  head:
+    - |
+      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260716-1')?.catch(error))error()})()</script>
+    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260821-1">
+    - <script defer src="/sw-dom.js?v=20260716-1"></script>
+  bottom:
+    - <script src="/js/zhuyz-lazyload-fallback.js"></script>

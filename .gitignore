@@ -1,0 +1,13 @@
+node_modules/
+public/
+output/
+.playwright-cli/
+db.json
+*.log
+.DS_Store
+Thumbs.db
+.tmp/
+tmp-*.py
+zhuyz-cloud-anzhiyu-legacy/
+
+package-lock.junction-bak.json

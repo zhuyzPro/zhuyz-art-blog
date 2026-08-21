@@ -1,0 +1,19 @@
+- creativity_list:
+    - name: Hexo
+      color: "#425AEF"
+      icon: /img/skill-code.svg
+    - name: AnZhiYu
+      color: "#f2b94b"
+      icon: /img/skill-design.svg
+    - name: Frontend
+      color: "#57b6e6"
+      icon: /img/skill-code.svg
+    - name: Notes
+      color: "#7c5cff"
+      icon: /img/skill-note.svg
+    - name: Projects
+      color: "#35c46b"
+      icon: /img/skill-project.svg
+    - name: Blog
+      color: "#ff7a59"
+      icon: /img/zhuyz-hero.svg

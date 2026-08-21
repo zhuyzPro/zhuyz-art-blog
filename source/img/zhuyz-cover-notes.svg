@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Writing notes cover">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="36" fill="url(#g)"/>
+  <rect x="148" y="64" width="504" height="316" rx="28" fill="#fff" opacity=".94"/>
+  <path d="M216 148 h330 M216 210 h248 M216 272 h294" stroke="#3b5bdb" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="188" cy="148" r="12" fill="#f97316"/>
+  <circle cx="188" cy="210" r="12" fill="#22c55e"/>
+  <circle cx="188" cy="272" r="12" fill="#06b6d4"/>
+  <text x="148" y="420" fill="#172554" font-family="Arial, sans-serif" font-size="34" font-weight="700">Notes</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "Zhuyz Pro",
+  "short_name": "Zhuyz Pro",
+  "description": "项目分享与生活记录",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fe",
+  "theme_color": "#425AEF",
+  "icons": [
+    {
+      "src": "/img/preloader-avatar.jpg",
+      "sizes": "960x960",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

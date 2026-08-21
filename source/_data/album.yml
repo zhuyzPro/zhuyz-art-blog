@@ -1,0 +1,8 @@
+- class_name: 生活相册
+  description: 用来保存生活照片、旅行记录和日常瞬间
+  path_name: /album/life/
+  cover: /img/zhuyz-cover-notes.svg
+- class_name: 项目截图
+  description: 记录项目界面、设计稿和阶段成果
+  path_name: /album/projects/
+  cover: /img/zhuyz-cover-project.svg
