@@ -14,7 +14,7 @@ AnZhiYu 主题的个人博客，正式地址是 [https://zhuyz.art/](https://zhu
 
 GitHub 仓库分开：
 
-- 个人博客：`zhuyzPro/zhuyz-art-blog`
+- 个人博客：[zhuyzPro/zhuyz-art-blog](https://github.com/zhuyzPro/zhuyz-art-blog)
 - 茶叶站：`zhuyzPro/ZhuyzPro.github.io`
 
 ## 本地预览
@@ -33,3 +33,5 @@ npm run build
 ```
 
 产物在 `public/`。生产环境发布到服务器静态根目录，需要保留 `/healthz` 和 `/api/v1/` 给授权网关，不要覆盖 `:3342` 和 `:6888`。
+
+本目录里的 `zhuyz-cloud-anzhiyu-legacy/` 是旧的残缺副本，已经不再使用。
