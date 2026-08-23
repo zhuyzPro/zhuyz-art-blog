@@ -1,0 +1,191 @@
+# Zhuyz Pro overrides for the bundled Butterfly theme.
+
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  首页: / || fas fa-home
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  归档: /archives/ || fas fa-box-archive
+  关于: /about/ || fas fa-user
+
+favicon: /favicon.ico
+
+avatar:
+  img: /img/zhuyz-hero.svg
+  effect: false
+
+disable_top_img: false
+index_img: /img/zhuyz-butterfly-hero.jpg
+default_top_img: /img/zhuyz-butterfly-hero.jpg
+footer_img: false
+background: "#f7faf8"
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /img/zhuyz-cover-tech.svg
+    - /img/zhuyz-cover-project.svg
+    - /img/zhuyz-cover-notes.svg
+
+error_img:
+  flink: /img/zhuyz-cover-notes.svg
+  post_page: /img/zhuyz-cover-project.svg
+
+index_site_info_top: 43%
+index_top_img_height: 100vh
+
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub: 项目、实践与生活记录
+
+index_layout: 3
+index_post_content:
+  method: 3
+  length: 260
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: false
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: https://zhuyz.art
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: true
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 技术实践、项目复盘与生活记录。
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/zhuyzPro
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: false
+  card_newest_comments:
+    enable: false
+  card_categories:
+    enable: false
+  card_tags:
+    enable: false
+  card_archives:
+    enable: false
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: false
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+theme_color:
+  enable: true
+  main: "#16877d"
+  paginator: "#16877d"
+  button_hover: "#d77448"
+  text_selection: "#16877d"
+  link_color: "#2d6762"
+  meta_color: "#69726f"
+  hr_color: "#d4e4df"
+  code_foreground: "#c3fff3"
+  code_background: "#14312f"
+  toc_color: "#16877d"
+  blockquote_padding_color: "#16877d"
+  blockquote_background_color: "#e1f1ed"
+  scrollbar_color: "#16877d"
+  meta_theme_color_light: "#f7faf8"
+  meta_theme_color_dark: "#14211f"
+
+rounded_corners_ui: true
+mask:
+  header: true
+  footer: true
+
+preloader:
+  enable: false
+
+display_mode: light
+
+readmode: true
+rightside_scroll_percent: false
+
+copy:
+  enable: true
+  copyright:
+    enable: false
+
+comments:
+  use:
+  text: false
+  lazyload: false
+  count: false
+  card_post_count: false
+
+pjax:
+  enable: false
+
+lazyload:
+  enable: false
+
+pwa:
+  enable: false
+
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: true
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/zhuyz-butterfly.css?v=20260823-1">
+  bottom:
+    - <script defer src="/js/zhuyz-butterfly-cleanup.js?v=20260823-1"></script>

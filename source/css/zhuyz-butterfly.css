@@ -1,0 +1,122 @@
+:root {
+  --zhuyz-hero-mask: rgba(7, 29, 27, 0.34);
+  --zhuyz-accent: #16877d;
+  --zhuyz-ink: #16322e;
+  --zhuyz-surface: #ffffff;
+  --zhuyz-muted-surface: #edf5f2;
+}
+
+#page-header.full_page {
+  background-position: center center;
+  min-height: 100svh;
+}
+
+#page-header.full_page::before {
+  background-color: var(--zhuyz-hero-mask);
+}
+
+#page-header.full_page #site-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+#page-header.full_page #site-subtitle {
+  margin-top: 0.2rem;
+  font-size: 1.35rem;
+  letter-spacing: 0;
+}
+
+#page-header.full_page #scroll-down {
+  bottom: 22px;
+}
+
+#page-header.full_page #scroll-down .scroll-down-effects {
+  animation: zhuyz-scroll-cue 1.8s ease-in-out infinite;
+}
+
+.zhuyz-empty-posts {
+  display: grid;
+  place-items: center;
+  gap: 0.65rem;
+  box-sizing: border-box;
+  min-height: 18rem;
+  padding: 3rem 2rem;
+  border: 1px solid #d6e6e1;
+  border-top: 3px solid var(--zhuyz-accent);
+  border-radius: 6px;
+  background: var(--zhuyz-surface);
+  color: var(--zhuyz-ink);
+  text-align: center;
+}
+
+.zhuyz-empty-posts i {
+  color: var(--zhuyz-accent);
+  font-size: 1.65rem;
+}
+
+.zhuyz-empty-posts h2,
+.zhuyz-empty-posts p {
+  margin: 0;
+}
+
+.zhuyz-empty-posts h2 {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+.zhuyz-empty-posts p {
+  max-width: 31rem;
+  color: #5f6e69;
+  line-height: 1.75;
+}
+
+#aside-content .card-widget.card-info {
+  border-top: 3px solid var(--zhuyz-accent);
+}
+
+html[data-theme='dark'] {
+  --zhuyz-ink: #d8eee8;
+  --zhuyz-surface: #1a2a27;
+  --zhuyz-muted-surface: #203431;
+}
+
+html[data-theme='dark'] .zhuyz-empty-posts {
+  border-color: #31534d;
+}
+
+html[data-theme='dark'] .zhuyz-empty-posts p {
+  color: #aec3bd;
+}
+
+@keyframes zhuyz-scroll-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #page-header.full_page #site-title {
+    font-size: 2.45rem;
+  }
+
+  #page-header.full_page #site-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .zhuyz-empty-posts {
+    min-height: 14rem;
+    padding: 2.25rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-header.full_page #scroll-down .scroll-down-effects {
+    animation: none;
+  }
+}
