@@ -6,8 +6,8 @@ menu:
     标签: /tags/ || anzhiyu-icon-tags
     归档: /archives/ || anzhiyu-icon-box-archive
   我的:
-    技术笔记: /categories/技术笔记/ || anzhiyu-icon-code
-    项目记录: /categories/项目记录/ || anzhiyu-icon-diagram-project
+    技术笔记: /categories/技术笔记/ || anzhiyu-icon-dove
+    项目记录: /categories/项目记录/ || anzhiyu-icon-fire
     相册集: /album/ || anzhiyu-icon-images
   关于:
     关于本站: /about/ || anzhiyu-icon-paper-plane
@@ -15,7 +15,7 @@ menu:
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 nav:
-  enable: false
+  enable: true
   travelling: false
   clock: false
   menu:
@@ -77,13 +77,13 @@ home_top:
       path: /categories/技术笔记/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
-      icon: anzhiyu-icon-code
+      icon: anzhiyu-icon-dove
     - name: 项目
       description: 开发与复盘
       path: /categories/项目记录/
       shadow: var(--anzhiyu-shadow-red)
       class: red
-      icon: anzhiyu-icon-diagram-project
+      icon: anzhiyu-icon-fire
     - name: 随笔
       description: 日常记录
       path: /categories/生活随笔/
@@ -96,10 +96,11 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js
   banner:
-    tips: 站点初始化
-    title: Zhuyz Pro Blog
-    image: /img/zhuyz-hero.svg
+    tips: 独立博客
+    title: Zhuyz Pro
+    image: /img/zhuyz-cover-project.svg
     link: /about/
+    buttonText: 了解本站
 
 post_meta:
   page:
@@ -175,9 +176,62 @@ footer:
   bdageitem:
     enable: false
   socialBar:
-    enable: false
+    enable: true
+    centerImg: /img/zhuyz-hero.svg
+    left:
+      - title: 首页
+        link: /
+        icon: anzhiyu-icon-house-chimney
+      - title: 技术笔记
+        link: /categories/技术笔记/
+        icon: anzhiyu-icon-dove
+      - title: 项目记录
+        link: /categories/项目记录/
+        icon: anzhiyu-icon-fire
+    right:
+      - title: 生活随笔
+        link: /categories/生活随笔/
+        icon: anzhiyu-icon-book
+      - title: GitHub
+        link: https://github.com/zhuyzPro
+        icon: anzhiyu-icon-github
+      - title: 关于本站
+        link: /about/
+        icon: anzhiyu-icon-paper-plane
   list:
-    enable: false
+    enable: true
+    randomFriends: 0
+    project:
+      - title: 站点
+        links:
+          - title: 首页
+            link: /
+          - title: 关于本站
+            link: /about/
+          - title: GitHub
+            link: https://github.com/zhuyzPro
+      - title: 内容
+        links:
+          - title: 技术笔记
+            link: /categories/技术笔记/
+          - title: 项目记录
+            link: /categories/项目记录/
+          - title: 生活随笔
+            link: /categories/生活随笔/
+      - title: 导航
+        links:
+          - title: 分类
+            link: /categories/
+          - title: 归档
+            link: /archives/
+          - title: 闲言碎语
+            link: /essay/
+      - title: 框架
+        links:
+          - title: AnZhiYu 主题
+            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+          - title: Hexo
+            link: https://hexo.io/
   footerBar:
     enable: true
     authorLink: /about
@@ -507,8 +561,8 @@ CDN:
 inject:
   head:
     - |
-      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260823-1')?.catch(error))error()})()</script>
-    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260823-1">
-    - <script defer src="/sw-dom.js?v=20260823-1"></script>
+      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260823-3')?.catch(error))error()})()</script>
+    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260823-3">
+    - <script defer src="/sw-dom.js?v=20260823-3"></script>
   bottom:
     - <script src="/js/zhuyz-lazyload-fallback.js"></script>

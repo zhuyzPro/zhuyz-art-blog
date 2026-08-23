@@ -5,6 +5,10 @@
           .catalog-list-item(id='首页')
             a(href="/") 首页
           !=catalog_list("categories")
+          if site.posts && site.posts.length === 0
+            each item in theme.home_top.category
+              .catalog-list-item
+                a(href=url_for(item.path))=item.name
         .category-bar-next#category-bar-next(onclick="anzhiyu.scrollCategoryBarToRight()")
           i.anzhiyufont.anzhiyu-icon-angle-double-right
         a.catalog-more(href="/categories/")!= '更多'

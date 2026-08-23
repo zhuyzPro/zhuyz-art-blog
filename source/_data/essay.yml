@@ -1,4 +1,4 @@
-- home_essay: false
+- home_essay: true
   title: 即刻短文
   subTitle: 生活碎片
   tips: 记录日常、想法与折腾
@@ -6,4 +6,5 @@
   buttonLink: /essay/
   limit: 30
   top_background: /img/zhuyz-cover-notes.svg
+  home_message: 博客框架已完成，第一批内容将在后续发布。
   essay_list: []

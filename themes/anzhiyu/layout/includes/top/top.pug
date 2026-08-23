@@ -34,6 +34,23 @@ if home_top_config.enable
                     use(xlink:href=`#`+ item.icon)
                 else if (item.icon.startsWith("anzhiyu"))
                   i.anzhiyufont(class=`${item.icon}`)
+      if !theme.home_top.swiper.enable
+        - let topBanner = home_top_config.banner || {}
+        - let topBannerImage = topBanner.image || '/img/zhuyz-cover-project.svg'
+        - let topBannerLink = topBanner.link || '/about/'
+        - let topBannerTips = topBanner.tips || '独立博客'
+        - let topBannerTitle = topBanner.title || config.title
+        - let topBannerAction = topBanner.buttonText || '了解本站'
+        a.topGroup.zhuyz-top-recommendation(href=url_for(topBannerLink) title=topBannerTitle)
+          #todayCard.todayCard
+            img.todayCard-cover(src=url_for(topBannerImage) alt=topBannerTitle)
+            .todayCard-info
+              .todayCard-tips=topBannerTips
+              .todayCard-title=topBannerTitle
+            .banner-button-group
+              .banner-button
+                i.anzhiyufont.anzhiyu-icon-arrow-circle-right
+                span.banner-button-text=topBannerAction
       if theme.home_top.swiper.enable
         #swiper_container_blog
           #swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal
@@ -71,10 +88,6 @@ if home_top_config.enable
             .top-group-list-none
             .top-group-list-none
             .top-group-list-none
-      else
-        if theme.home_top.banner.top_group_banner_css
-          link(rel="stylesheet", href=theme.home_top.banner.top_group_banner_css)
-      
   if theme.home_top.swiper.enable
     if !site.data.essay
       script(src=url_for(theme.home_top.swiper.swiper_js))

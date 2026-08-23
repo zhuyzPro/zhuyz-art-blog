@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data = event.data || {};
     sessionStorage.setItem(updateKey, data.type || "update");
     clearCacheNotice().then(() => {
-      if (data.list && data.list.some(url => /\.(js|css)$/.test(url))) location.reload();
+      if (data.list && data.list.some(url => /\.(js|css)(?:[?#]|$)/.test(url))) location.reload();
       else sessionStorage.removeItem(updateKey);
     });
   });
