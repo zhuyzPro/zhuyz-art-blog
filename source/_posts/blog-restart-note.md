@@ -8,6 +8,7 @@ tags:
   - 博客
 cover: /img/zhuyz-cover-notes.svg
 comments: false
+published: false
 ---
 
 这个站点绕了一圈：先是安知鱼个人博客，后来掺进接单页，茶叶站又占用过同一套目录。

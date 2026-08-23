@@ -9,6 +9,7 @@ tags:
   - 博客
 cover: /img/zhuyz-cover-project.svg
 comments: false
+published: false
 ---
 
 桌面上一度有两个几乎同名的博客目录，GitHub 仓库、主题和域名也缠在一起。这次把它们按域名拆开。

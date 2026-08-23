@@ -1,7 +1,7 @@
 {
   "name": "Zhuyz Pro",
   "short_name": "Zhuyz Pro",
-  "description": "项目分享与生活记录",
+  "description": "Zhuyz Pro 的个人博客",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f9fe",

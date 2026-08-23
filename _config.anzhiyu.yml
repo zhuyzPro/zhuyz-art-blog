@@ -32,9 +32,6 @@ nav:
         - name: 个人仓库
           link: https://github.com/zhuyzPro
           icon: /img/skill-code.svg
-        - name: 茶叶站
-          link: https://zhuyz.cloud/
-          icon: /img/skill-note.svg
 
 favicon: /img/preloader-avatar.jpg
 
@@ -171,7 +168,7 @@ twikoo:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2026
   custom_text:
   runtime:
     enable: false
@@ -258,7 +255,7 @@ busuanzi:
   page_pv: false
 
 runtimeshow:
-  enable: true
+  enable: false
   publish_date: 4/1/2021 00:00:00
 
 newest_comments:
@@ -510,8 +507,8 @@ CDN:
 inject:
   head:
     - |
-      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260716-1')?.catch(error))error()})()</script>
-    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260821-1">
-    - <script defer src="/sw-dom.js?v=20260716-1"></script>
+      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260823-1')?.catch(error))error()})()</script>
+    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260823-1">
+    - <script defer src="/sw-dom.js?v=20260823-1"></script>
   bottom:
     - <script src="/js/zhuyz-lazyload-fallback.js"></script>

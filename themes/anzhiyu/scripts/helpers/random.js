@@ -20,6 +20,10 @@ hexo.extend.generator.register("random", function (locals) {
   let result = `var posts=${JSON.stringify(
     posts
   )};function toRandomPost(){
+    if (!posts.length) {
+      ${pjaxEn ? "pjax.loadUrl('/');" : "window.location.href='/';"}
+      return;
+    }
     ${pjaxEn ? "pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);" : "window.location.href='/'+posts[Math.floor(Math.random() * posts.length)];"}
   };`;
 

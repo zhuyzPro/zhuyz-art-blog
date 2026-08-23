@@ -1,4 +1,4 @@
-- home_essay: true
+- home_essay: false
   title: 即刻短文
   subTitle: 生活碎片
   tips: 记录日常、想法与折腾
@@ -6,10 +6,4 @@
   buttonLink: /essay/
   limit: 30
   top_background: /img/zhuyz-cover-notes.svg
-  essay_list:
-    - content: 个人博客已经从旧接单页收回到 AnZhiYu 主题，首页改为技术、项目和随笔。
-      date: 2026-08-21 21:00:00
-    - content: zhuyz.art 继续放个人记录，茶叶展示固定在 zhuyz.cloud。
-      date: 2026-08-21 20:50:00
-    - content: 博客已完成初始化：保留 AnZhiYu 主题框架，后续内容会逐步替换成自己的记录。
-      date: 2026-07-16 22:30:00
+  essay_list: []

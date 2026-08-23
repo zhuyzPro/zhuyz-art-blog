@@ -9,6 +9,7 @@ tags:
   - 博客
 cover: /img/zhuyz-cover-tech.svg
 comments: false
+published: false
 ---
 
 Zhuyz Pro 个人博客已经从演示内容和旧的接单页，收成现在的 AnZhiYu 主题骨架。

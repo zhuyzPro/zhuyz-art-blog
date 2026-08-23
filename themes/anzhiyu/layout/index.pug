@@ -4,5 +4,11 @@ block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
     include includes/categoryGroup.pug
-    +postUI
-    include includes/pagination.pug
+    if page.posts && page.posts.data.length
+      +postUI
+      include includes/pagination.pug
+    else
+      .zhuyz-empty-posts(role='status')
+        i.anzhiyufont.anzhiyu-icon-book(aria-hidden='true')
+        h2 文章区暂未发布内容
+        p 后续内容会在这里陆续整理。

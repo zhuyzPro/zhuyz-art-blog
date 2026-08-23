@@ -9,6 +9,7 @@ tags:
   - 静态站点
 cover: /img/zhuyz-cover-notes.svg
 comments: false
+published: false
 ---
 
 `zhuyz.art` 根域名要放个人博客，但原来的授权网关、卡密后台和独角数卡还在同一台服务器上。这次部署只接管根站点，不覆盖既有接口和端口。
