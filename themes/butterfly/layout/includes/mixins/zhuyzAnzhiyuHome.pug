@@ -1,0 +1,154 @@
+mixin zhuyzAnzhiyuHome()
+  -
+    const aboutSource = Array.isArray(site.data.about) ? site.data.about[0] : site.data.about
+    const about = aboutSource || {}
+    const creativitySource = Array.isArray(site.data.creativity) ? site.data.creativity[0] : site.data.creativity
+    const skills = creativitySource && creativitySource.creativity_list ? creativitySource.creativity_list.slice(0, 6) : []
+    const posts = page.posts && page.posts.data ? page.posts.data : []
+    const fallbackCovers = ['/img/zhuyz-cover-tech.svg', '/img/zhuyz-cover-project.svg', '/img/zhuyz-cover-notes.svg']
+    const categoryEntries = [
+      { name: '技术', description: '实践、踩坑与方法整理', path: '/categories/', icon: 'fa-solid fa-code', image: '/img/zhuyz-cover-tech.svg', tone: 'tech' },
+      { name: '项目', description: '开发过程与复盘记录', path: '/categories/', icon: 'fa-solid fa-compass-drafting', image: '/img/zhuyz-cover-project.svg', tone: 'project' },
+      { name: '随笔', description: '学习、生活与阶段笔记', path: '/categories/', icon: 'fa-solid fa-pen-nib', image: '/img/zhuyz-cover-notes.svg', tone: 'notes' }
+    ]
+  #zhuyz-anzhiyu-home
+    .zhuyz-home-shell
+      section.zhuyz-home-notice(aria-label='站点公告')
+        .zhuyz-notice-mark(aria-hidden='true')
+          i.fa-solid.fa-bullhorn
+        .zhuyz-notice-content
+          span.zhuyz-notice-label 站点状态
+          p 个人博客正在整理内容，先从真实的实践和记录开始。
+        a.zhuyz-notice-link(href=url_for('/about/') title='关于本站')
+          span 关于本站
+          i.fa-solid.fa-arrow-right(aria-hidden='true')
+
+      section.zhuyz-home-showcase(aria-labelledby='zhuyz-home-intro-title')
+        article.zhuyz-intro-card
+          .zhuyz-intro-copy
+            p.zhuyz-panel-kicker
+              i.fa-solid.fa-sparkles(aria-hidden='true')
+              span 个人博客
+            h2#zhuyz-home-intro-title= about.name || config.title
+            p.zhuyz-intro-description= about.description || config.description
+          .zhuyz-intro-bottom
+            if skills.length
+              .zhuyz-skill-cloud(aria-label='内容方向')
+                each skill in skills
+                  span.zhuyz-skill-chip(style=`--zhuyz-skill-color: ${skill.color || '#16877d'}`)
+                    img(src=url_for(skill.icon) alt='')
+                    span= skill.name
+            .zhuyz-intro-actions
+              a.zhuyz-primary-action(href=url_for('/about/'))
+                i.fa-solid.fa-user(aria-hidden='true')
+                span 认识本站
+              a.zhuyz-secondary-action(href=url_for('/archives/'))
+                span 浏览归档
+                i.fa-solid.fa-arrow-right(aria-hidden='true')
+
+        a.zhuyz-feature-card(href=url_for('/about/') title='了解 Zhuyz Pro')
+          .zhuyz-feature-copy
+            span.zhuyz-feature-label 推荐入口
+            h2= about.subtitle || config.subtitle
+            p 记录技术实践、项目复盘与生活片段，让每一次完成都有迹可循。
+            span.zhuyz-feature-link
+              span 进入关于页
+              i.fa-solid.fa-arrow-right(aria-hidden='true')
+          .zhuyz-feature-visual
+            img(src=url_for('/img/zhuyz-hero.svg') alt='Zhuyz Pro 博客插图')
+
+      section.zhuyz-category-entries(aria-label='内容入口')
+        each category in categoryEntries
+          a(class=`zhuyz-category-card zhuyz-category-card--${category.tone}` href=url_for(category.path) title=`查看${category.name}分类`)
+            .zhuyz-category-card-copy
+              span.zhuyz-category-icon(aria-hidden='true')
+                i(class=category.icon)
+              h2= category.name
+              p= category.description
+            img.zhuyz-category-card-visual(src=url_for(category.image) alt='')
+            i.zhuyz-category-arrow.fa-solid.fa-arrow-right(aria-hidden='true')
+
+      nav.zhuyz-category-nav(aria-label='博客分类')
+        span.zhuyz-category-nav-label
+          i.fa-solid.fa-grid-2(aria-hidden='true')
+          span 内容分类
+        .zhuyz-category-nav-list
+          a.is-active(href=url_for('/')) 首页
+          each category in categoryEntries
+            a(href=url_for(category.path))= category.name
+        a.zhuyz-category-nav-all(href=url_for('/categories/') title='查看全部分类')
+          span 全部分类
+          i.fa-solid.fa-chevron-right(aria-hidden='true')
+
+      section.zhuyz-feed-layout(aria-labelledby='zhuyz-feed-title')
+        .zhuyz-feed-main
+          .zhuyz-section-heading
+            .zhuyz-section-heading-copy
+              span.zhuyz-section-kicker 内容更新
+              h2#zhuyz-feed-title 最新文章
+            a.zhuyz-section-link(href=url_for('/archives/'))
+              span 文章归档
+              i.fa-solid.fa-arrow-right(aria-hidden='true')
+
+          if posts.length
+            .zhuyz-post-grid
+              each article, index in posts
+                -
+                  const link = article.link || article.path
+                  const title = article.title || _p('no_title')
+                  const cover = article.cover || fallbackCovers[index % fallbackCovers.length]
+                  const articleText = article.description || strip_html(article.content || '')
+                  const summary = articleText.length > 104 ? articleText.substring(0, 104) + '...' : articleText
+                  const firstCategory = article.categories && article.categories.data && article.categories.data.length ? article.categories.data[0].name : '未分类'
+                article.zhuyz-post-card
+                  a.zhuyz-post-cover(href=url_for(link) title=title)
+                    img(src=url_for(cover) alt=title)
+                  .zhuyz-post-card-body
+                    .zhuyz-post-meta
+                      span= firstCategory
+                      time(datetime=date_xml(article.date))= date(article.date, 'YYYY-MM-DD')
+                    h3
+                      a(href=url_for(link) title=title)= title
+                    if summary
+                      p= summary
+                    a.zhuyz-post-read(href=url_for(link) title=`阅读${title}`)
+                      span 阅读文章
+                      i.fa-solid.fa-arrow-right(aria-hidden='true')
+          else
+            .zhuyz-empty-feed(role='status')
+              .zhuyz-empty-feed-icon(aria-hidden='true')
+                i.fa-solid.fa-pen-to-square
+              .zhuyz-empty-feed-copy
+                h3 正在整理第一批文章
+                p 技术笔记、项目记录与生活随笔会在这里陆续发布。
+              a.zhuyz-empty-feed-link(href=url_for('/about/'))
+                span 先了解本站
+                i.fa-solid.fa-arrow-right(aria-hidden='true')
+
+        aside.zhuyz-profile-card(aria-label='博客信息')
+          .zhuyz-profile-head
+            .zhuyz-profile-avatar
+              img(src=url_for(about.avatarImg || '/img/zhuyz-hero.svg') alt=`${about.name || config.title} 的头像`)
+            .zhuyz-profile-title
+              h2= about.name || config.title
+              p= about.subtitle || config.subtitle
+          .zhuyz-profile-status
+            i.fa-solid.fa-circle-check(aria-hidden='true')
+            span 站点持续整理中
+          dl.zhuyz-profile-details
+            div
+              dt 建站年份
+              dd 2026
+            div
+              dt 站点定位
+              dd 个人博客
+            div
+              dt 内容方向
+              dd 技术、项目、记录
+          .zhuyz-profile-actions
+            a.zhuyz-profile-github(href='https://github.com/zhuyzPro' rel='noopener noreferrer' target='_blank')
+              i.fa-brands.fa-github(aria-hidden='true')
+              span GitHub
+            a.zhuyz-profile-about(href=url_for('/about/'))
+              i.fa-solid.fa-user(aria-hidden='true')
+              span 关于

@@ -187,5 +187,6 @@ CDN:
 inject:
   head:
     - <link rel="stylesheet" href="/css/zhuyz-butterfly.css?v=20260823-1">
+    - <link rel="stylesheet" href="/css/zhuyz-anzhiyu-home.css?v=20260824-1">
   bottom:
     - <script defer src="/js/zhuyz-butterfly-cleanup.js?v=20260823-1"></script>

@@ -4,6 +4,7 @@
 - var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
 - var pageType = globalPageType === 'post' ? 'post' : 'page'
 - pageType = page.type ? pageType + ' type-' + page.type : pageType
+- var zhuyzHomeLayout = is_home() ? 'zhuyz-home-layout' : ''
 
 doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
@@ -42,7 +43,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     #body-wrap(class=pageType)
       include ./header/index.pug
 
-      main#content-inner.layout(class=hideAside)
+      main#content-inner.layout(class=[hideAside, zhuyzHomeLayout])
         if body
           div!= body
         else
