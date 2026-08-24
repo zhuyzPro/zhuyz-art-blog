@@ -21,7 +21,7 @@ i18n_dir: :lang
 default_layout: post
 new_post_name: :title.md
 per_page: 10
-theme: butterfly
+theme: anzhiyu
 external_link:
   enable: true
   field: site

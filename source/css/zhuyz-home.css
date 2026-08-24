@@ -62,60 +62,6 @@
   margin: 0.45rem 0 0;
 }
 
-/* The demo replaces the desktop recommendation with a compact scrollable
- * card beside the two category entries on tablets and phones. */
-@media screen and (max-width: 1200px) {
-  #home_top .zhuyz-top-recommendation {
-    display: flex;
-    flex: 0 0 200px;
-    height: 164px;
-    margin-left: 0.5rem;
-    width: 200px;
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard {
-    display: flex;
-    height: 164px;
-    margin: 0;
-    position: relative;
-    width: 200px;
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard-cover {
-    height: 100px;
-    min-height: 100px;
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard::after {
-    background: linear-gradient(180deg, transparent 25%, var(--anzhiyu-card-bg) 66%);
-    box-shadow: none;
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard-info {
-    bottom: 0.7rem;
-    color: var(--anzhiyu-fontcolor);
-    left: 0.7rem;
-    max-width: calc(100% - 1.4rem);
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard-tips {
-    color: var(--anzhiyu-secondtext);
-    font-size: 0.65rem;
-  }
-
-  #home_top .zhuyz-top-recommendation .todayCard-title {
-    font-size: 0.9rem;
-    line-height: 1.25;
-  }
-
-  #home_top .zhuyz-top-recommendation .banner-button-group {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #content-inner #recent-posts .zhuyz-empty-posts {
     margin: 1rem 20px 1.5rem;
