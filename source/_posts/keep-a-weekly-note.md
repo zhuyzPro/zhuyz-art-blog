@@ -7,7 +7,7 @@ tags:
   - 生活
   - 记录
   - 随笔
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-woods.jpg
 comments: false
 published: true
 ---

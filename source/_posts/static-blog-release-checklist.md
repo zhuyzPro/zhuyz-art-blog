@@ -7,7 +7,7 @@ tags:
   - 部署
   - Nginx
   - 发布
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-woods.jpg
 comments: false
 published: true
 ---

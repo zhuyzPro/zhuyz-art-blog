@@ -7,7 +7,7 @@ tags:
   - Hexo
   - AnZhiYu
   - 博客
-cover: /img/zhuyz-cover-tech.svg
+cover: /img/covers/landscape-mountain.jpg
 comments: false
 published: false
 ---

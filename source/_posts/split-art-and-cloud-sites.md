@@ -7,7 +7,7 @@ tags:
   - 项目
   - 复盘
   - 博客
-cover: /img/zhuyz-cover-project.svg
+cover: /img/covers/landscape-road.jpg
 comments: false
 published: false
 ---

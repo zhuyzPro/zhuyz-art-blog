@@ -7,7 +7,7 @@ tags:
   - 首页设计
   - Hexo
   - AnZhiYu
-cover: /img/zhuyz-butterfly-hero.jpg
+cover: /img/covers/landscape-coast.jpg
 comments: false
 published: true
 ---

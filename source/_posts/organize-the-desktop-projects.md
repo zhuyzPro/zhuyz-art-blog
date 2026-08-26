@@ -7,7 +7,7 @@ tags:
   - 整理
   - 项目管理
   - GitHub
-cover: /img/zhuyz-cover-project.svg
+cover: /img/covers/landscape-snow.jpg
 comments: false
 published: true
 ---

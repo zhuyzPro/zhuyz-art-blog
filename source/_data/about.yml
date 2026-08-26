@@ -1,6 +1,6 @@
 - name: Zhuyz Pro
   subtitle: 项目分享与生活记录
-  avatarImg: /img/zhuyz-hero.svg
+  avatarImg: /img/preloader-avatar.jpg
   description: 这里是 Zhuyz Pro 的个人博客，用来沉淀技术实践、项目复盘、学习笔记与生活随笔。
   helloAbout: 你好，很高兴在这里见到你。
   avatarSkills:
@@ -25,7 +25,7 @@
   careers:
     tips: 记录
     title: 持续记录项目与实践
-    img: /img/zhuyz-cover-project.svg
+    img: /img/covers/landscape-road.jpg
     list:
       - desc: 技术笔记
         color: "#425AEF"
@@ -33,12 +33,12 @@
         color: "#f2b94b"
     item:
   statistic:
-    cover: /img/zhuyz-cover-tech.svg
+    cover: /img/covers/landscape-forest.jpg
     link: /archives/
     text: 文章归档
   map:
-    background: /img/zhuyz-cover-project.svg
-    backgroundDark: /img/zhuyz-cover-notes.svg
+    background: /img/covers/landscape-lake.jpg
+    backgroundDark: /img/covers/landscape-snow.jpg
     title: 当前博客
     StrengthenTitle: zhuyz.art
   selfInfo:
@@ -53,8 +53,8 @@
     personality_type: BLOG
     personality_type_color: "#425AEF"
     name_url: https://zhuyz.art/
-    personality_img: /img/zhuyz-cover-tech.svg
-    photo_url: /img/zhuyz-hero.svg
+    personality_img: /img/covers/landscape-mountain.jpg
+    photo_url: /img/preloader-avatar.jpg
   maxim:
     maxim_tips: 站点理念
     maxim_top: 记录实践
@@ -67,21 +67,21 @@
     game_tips: 爱好
     game_title: 折腾项目
     game_uid: 记录比收藏更重要
-    game_bg: /img/zhuyz-cover-project.svg
+    game_bg: /img/covers/landscape-desert.jpg
   comic:
     comic_tips: 阅读
     comic_title: 待补充
     comic_list:
       - name: 生活记录
         href: /essay/
-        cover: /img/zhuyz-cover-notes.svg
+        cover: /img/covers/landscape-woods.jpg
   music:
     music_tips: 音乐
     music_title: 稍后补充
     music_link: /music/
-    music_bg: /img/zhuyz-cover-notes.svg
+    music_bg: /img/covers/landscape-coast.jpg
   like:
     like_tips: 关注
     like_title: 技术、效率与创作
     like_bottom: 用长期记录提高复盘质量。
-    like_bg: /img/zhuyz-cover-tech.svg
+    like_bg: /img/covers/landscape-forest.jpg

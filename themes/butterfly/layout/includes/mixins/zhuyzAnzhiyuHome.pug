@@ -5,11 +5,11 @@ mixin zhuyzAnzhiyuHome()
     const creativitySource = Array.isArray(site.data.creativity) ? site.data.creativity[0] : site.data.creativity
     const skills = creativitySource && creativitySource.creativity_list ? creativitySource.creativity_list.slice(0, 6) : []
     const posts = page.posts && page.posts.data ? page.posts.data : []
-    const fallbackCovers = ['/img/zhuyz-cover-tech.svg', '/img/zhuyz-cover-project.svg', '/img/zhuyz-cover-notes.svg']
+    const fallbackCovers = ['/img/covers/landscape-forest.jpg', '/img/covers/landscape-mountain.jpg', '/img/covers/landscape-lake.jpg']
     const categoryEntries = [
-      { name: '技术', description: '实践、踩坑与方法整理', path: '/categories/', icon: 'fa-solid fa-code', image: '/img/zhuyz-cover-tech.svg', tone: 'tech' },
-      { name: '项目', description: '开发过程与复盘记录', path: '/categories/', icon: 'fa-solid fa-compass-drafting', image: '/img/zhuyz-cover-project.svg', tone: 'project' },
-      { name: '随笔', description: '学习、生活与阶段笔记', path: '/categories/', icon: 'fa-solid fa-pen-nib', image: '/img/zhuyz-cover-notes.svg', tone: 'notes' }
+      { name: '技术', description: '实践、踩坑与方法整理', path: '/categories/', icon: 'fa-solid fa-code', image: '/img/covers/landscape-road.jpg', tone: 'tech' },
+      { name: '项目', description: '开发过程与复盘记录', path: '/categories/', icon: 'fa-solid fa-compass-drafting', image: '/img/covers/landscape-coast.jpg', tone: 'project' },
+      { name: '随笔', description: '学习、生活与阶段笔记', path: '/categories/', icon: 'fa-solid fa-pen-nib', image: '/img/covers/landscape-woods.jpg', tone: 'notes' }
     ]
   #zhuyz-anzhiyu-home
     .zhuyz-home-shell

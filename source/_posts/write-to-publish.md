@@ -7,7 +7,7 @@ tags:
   - Markdown
   - Hexo
   - 发布
-cover: /img/zhuyz-cover-tech.svg
+cover: /img/covers/landscape-forest.jpg
 comments: false
 published: true
 ---

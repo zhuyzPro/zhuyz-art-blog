@@ -7,7 +7,7 @@ tags:
   - 项目复盘
   - 个人博客
   - 整理
-cover: /img/zhuyz-cover-project.svg
+cover: /img/covers/landscape-forest.jpg
 comments: false
 published: true
 ---

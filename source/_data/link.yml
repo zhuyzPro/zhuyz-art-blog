@@ -5,6 +5,6 @@
   link_list:
     - name: Zhuyz Pro
       link: https://zhuyz.art/
-      avatar: /img/zhuyz-hero.svg
+      avatar: /img/preloader-avatar.jpg
       descr: 项目分享与生活记录
       recommend: true

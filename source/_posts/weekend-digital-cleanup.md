@@ -7,7 +7,7 @@ tags:
   - 生活
   - 整理
   - 随笔
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-snow.jpg
 comments: false
 published: true
 ---

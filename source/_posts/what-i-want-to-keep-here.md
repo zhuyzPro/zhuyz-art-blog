@@ -7,7 +7,7 @@ tags:
   - 博客
   - 思考
   - 记录
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-desert.jpg
 comments: false
 published: true
 ---

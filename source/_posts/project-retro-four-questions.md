@@ -7,7 +7,7 @@ tags:
   - 项目复盘
   - 方法
   - 记录
-cover: /img/zhuyz-cover-project.svg
+cover: /img/covers/landscape-desert.jpg
 comments: false
 published: true
 ---

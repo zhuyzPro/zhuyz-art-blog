@@ -6,7 +6,7 @@ categories: 生活随笔
 tags:
   - 随笔
   - 博客
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-mountain.jpg
 comments: false
 published: false
 ---

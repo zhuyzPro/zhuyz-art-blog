@@ -7,7 +7,7 @@ tags:
   - 首页设计
   - 交互
   - 项目复盘
-cover: /img/zhuyz-butterfly-hero.jpg
+cover: /img/covers/landscape-lake.jpg
 comments: false
 published: true
 ---

@@ -7,7 +7,7 @@ tags:
   - Nginx
   - 部署
   - 静态站点
-cover: /img/zhuyz-cover-notes.svg
+cover: /img/covers/landscape-lake.jpg
 comments: false
 published: false
 ---

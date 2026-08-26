@@ -35,7 +35,7 @@ nav:
 favicon: /img/preloader-avatar.jpg
 
 avatar:
-  img: /img/zhuyz-hero.svg
+  img: /img/preloader-avatar.jpg
   effect: false
 
 author_status:
@@ -58,13 +58,15 @@ cover:
   archives_enable: true
   position: left
   default_cover:
-    - /img/zhuyz-cover-tech.svg
-    - /img/zhuyz-cover-project.svg
-    - /img/zhuyz-cover-notes.svg
+    - /img/covers/landscape-forest.jpg
+    - /img/covers/landscape-mountain.jpg
+    - /img/covers/landscape-lake.jpg
+    - /img/covers/landscape-coast.jpg
+    - /img/covers/landscape-snow.jpg
 
 error_img:
-  flink: /img/zhuyz-cover-notes.svg
-  post_page: /img/zhuyz-cover-project.svg
+  flink: /img/covers/landscape-woods.jpg
+  post_page: /img/covers/landscape-road.jpg
 
 home_top:
   enable: true
@@ -99,7 +101,7 @@ home_top:
   banner:
     tips: 独立博客
     title: Zhuyz Pro
-    image: /img/zhuyz-cover-project.svg
+    image: /img/covers/landscape-mountain.jpg
     link: /about/
     buttonText: 了解本站
 
@@ -178,7 +180,7 @@ footer:
     enable: false
   socialBar:
     enable: true
-    centerImg: /img/zhuyz-hero.svg
+    centerImg: /img/preloader-avatar.jpg
     left:
       - title: 首页
         link: /
@@ -527,7 +529,7 @@ friends_vue:
   vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
   apiurl:
   top_tips: 友链朋友圈暂未启用
-  top_background: /img/zhuyz-cover-project.svg
+  top_background: /img/covers/landscape-coast.jpg
 
 pwa:
   enable: true
