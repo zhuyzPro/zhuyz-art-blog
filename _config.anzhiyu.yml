@@ -568,8 +568,9 @@ CDN:
 inject:
   head:
     - |
-      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260824-anzhiyu-1')?.catch(error))error()})()</script>
-    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260824-anzhiyu-1">
-    - <script defer src="/sw-dom.js?v=20260824-anzhiyu-1"></script>
+      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260827-hero-fade-1')?.catch(error))error()})()</script>
+    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260827-hero-fade-1">
+    - <script defer src="/sw-dom.js?v=20260827-hero-fade-1"></script>
   bottom:
     - <script src="/js/zhuyz-lazyload-fallback.js"></script>
+    - <script defer src="/js/zhuyz-home-fade.js?v=20260827-hero-fade-1"></script>

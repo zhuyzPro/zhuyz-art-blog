@@ -1,4 +1,25 @@
 /* Align the local shell with the stock AnZhiYu demo homepage. */
+#page-header.full_page {
+  --zhuyz-hero-fade: 0;
+  isolation: isolate;
+}
+
+#page-header.full_page::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  content: "";
+  background: var(--anzhiyu-background, #f7f9fe);
+  opacity: var(--zhuyz-hero-fade, 0);
+  pointer-events: none;
+  will-change: opacity;
+}
+
+#page-header.full_page > #nav,
+#page-header.full_page > #site-info {
+  z-index: 2;
+}
+
 #page-header.not-top-img {
   margin-bottom: 0;
 }
