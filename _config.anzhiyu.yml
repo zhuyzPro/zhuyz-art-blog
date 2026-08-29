@@ -46,8 +46,8 @@ social:
   Github: https://github.com/zhuyzPro || anzhiyu-icon-github
 
 disable_top_img: false
-index_img: /img/zhuyz-butterfly-hero.jpg
-default_top_img: /img/zhuyz-butterfly-hero.jpg
+index_img: /img/zhuyz-butterfly-hero.jpg?v=20260829-hero-handoff-3
+default_top_img: /img/zhuyz-butterfly-hero.jpg?v=20260829-hero-handoff-3
 index_site_info_top: 43%
 index_top_img_height: 100vh
 article_double_row: true
@@ -568,9 +568,9 @@ CDN:
 inject:
   head:
     - |
-      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260829-hero-handoff-2')?.catch(error))error()})()</script>
-    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260829-hero-handoff-2">
-    - <script defer src="/sw-dom.js?v=20260829-hero-handoff-2"></script>
+      <script>(()=>{const sw=navigator.serviceWorker;const error=()=>console.error('Service Worker 注册失败！可能是由于您的浏览器不支持该功能！');if(!sw?.register('/sw.js?v=20260829-hero-handoff-3')?.catch(error))error()})()</script>
+    - <link rel="stylesheet" href="/css/zhuyz-home.css?v=20260829-hero-handoff-3">
+    - <script defer src="/sw-dom.js?v=20260829-hero-handoff-3"></script>
   bottom:
     - <script src="/js/zhuyz-lazyload-fallback.js"></script>
-    - <script defer src="/js/zhuyz-home-fade.js?v=20260829-hero-handoff-2"></script>
+    - <script defer src="/js/zhuyz-home-fade.js?v=20260829-hero-handoff-3"></script>
