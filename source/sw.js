@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_PREFIX = "AnZhiYuThemeCache";
-const CACHE_NAME = `${CACHE_PREFIX}-v20260827-hero-fade-1`;
+const CACHE_NAME = `${CACHE_PREFIX}-v20260829-hero-handoff-2`;
 const LOCAL_HOST = "zhuyz.art";
 const LOCAL_NETWORK_FIRST_RE = /\.(js|css)$/i;
 const STATIC_ASSET_RE = /\.(woff2?|ttf|cur|png|jpe?g|svg|webp|gif|ico)$/i;
@@ -75,10 +75,10 @@ self.addEventListener("message", event => {
   event.source &&
     event.source.postMessage({
       type: "update",
-      new: { global: "20260827-hero-fade-1", local: "20260827-hero-fade-1" },
+      new: { global: "20260829-hero-handoff-2", local: "20260829-hero-handoff-2" },
       list: [
-        "/css/zhuyz-home.css?v=20260827-hero-fade-1",
-        "/js/zhuyz-home-fade.js?v=20260827-hero-fade-1"
+        "/css/zhuyz-home.css?v=20260829-hero-handoff-2",
+        "/js/zhuyz-home-fade.js?v=20260829-hero-handoff-2"
       ]
     });
 });

@@ -1,7 +1,12 @@
 /* Align the local shell with the stock AnZhiYu demo homepage. */
 #page-header.full_page {
   --zhuyz-hero-fade: 0;
+  --zhuyz-hero-copy-opacity: 1;
+  --zhuyz-hero-collapse: 0px;
+  height: calc(100vh - var(--zhuyz-hero-collapse, 0px));
   isolation: isolate;
+  min-height: 0;
+  transition: none;
 }
 
 #page-header.full_page::after {
@@ -16,8 +21,16 @@
 }
 
 #page-header.full_page > #nav,
-#page-header.full_page > #site-info {
+#page-header.full_page > #site-info,
+#page-header.full_page > #scroll-down {
   z-index: 2;
+}
+
+#page-header.full_page > #site-info,
+#page-header.full_page > #scroll-down {
+  opacity: var(--zhuyz-hero-copy-opacity, 1);
+  transition: opacity 0.24s ease;
+  will-change: opacity;
 }
 
 #page-header.not-top-img {
@@ -88,5 +101,19 @@
     margin: 1rem 20px 1.5rem;
     min-height: 220px;
     width: calc(100% - 40px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-header.full_page > #site-info,
+  #page-header.full_page > #scroll-down {
+    opacity: 1;
+    transition: none;
+    will-change: auto;
+  }
+
+  #page-header.full_page.nav-fixed > #site-info,
+  #page-header.full_page.nav-fixed > #scroll-down {
+    opacity: 0;
   }
 }
